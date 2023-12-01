@@ -10,7 +10,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomeController">
     <children>
-        <Label text="Home View" />
+        <Label text="Home" />
         <TextField fx:id="usernameField" promptText="Username" />
         <PasswordField fx:id="passwordField" promptText="Password" />
         <Button fx:id="loginButton" text="Login" onAction="#handleLogin" />
