@@ -1,0 +1,200 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123456789",
+        "address": "123 Main St",
+        "id": "c48f0ecd-fce7-4f76-ae53-47127ec938bd",
+        "userName": "johndoe",
+        "userRole": "Contributor",
+        "email": "john@example.com"
+    },
+    {
+        "firstName": "billy",
+        "lastName": "joe",
+        "password": "password567",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "b2f6ad8c-1b7b-4515-a5ca-8741341a6e7b",
+        "userName": "bjoe",
+        "userRole": "Contributor",
+        "email": "bjoe@email.com"
+    },
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123456789",
+        "address": "123 Main St",
+        "id": "bf90e23e-4494-40d5-a2d3-cc11ceec7220",
+        "userName": "johndoe",
+        "userRole": "Contributor",
+        "email": "john@example.com"
+    },
+    {
+        "firstName": "billy",
+        "lastName": "joe",
+        "password": "password567",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "5d12ace2-7a14-471e-9d53-a5d1d8ff7679",
+        "userName": "bjoe",
+        "userRole": "Contributor",
+        "email": "bjoe@email.com"
+    },
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123456789",
+        "address": "123 Main St",
+        "id": "4986da4c-1cd7-4196-8b41-1d006ce1093f",
+        "userName": "johndoe",
+        "userRole": "Contributor",
+        "email": "john@example.com"
+    },
+    {
+        "firstName": "billy",
+        "lastName": "joe",
+        "password": "password567",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "5abed46e-7f83-4a86-964a-7e28c9bdb95a",
+        "userName": "bjoe",
+        "userRole": "Contributor",
+        "email": "bjoe@email.com"
+    },
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123456789",
+        "address": "123 Main St",
+        "id": "239869af-6442-47bc-ac5b-6b571534e2e7",
+        "userName": "johndoe",
+        "userRole": "Contributor",
+        "email": "john@example.com"
+    },
+    {
+        "firstName": "billy",
+        "lastName": "joe",
+        "password": "password567",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "b61ce21f-d4a6-4ab3-9eb2-4cf23542f3ff",
+        "userName": "bjoe",
+        "userRole": "Contributor",
+        "email": "bjoe@email.com"
+    },
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "password123",
+        "phoneNumber": "123456789",
+        "address": "123 Main St",
+        "id": "aaae3842-2098-457e-8b1a-d8cda96ccb67",
+        "userName": "johndoe",
+        "userRole": "Contributor",
+        "email": "john@example.com"
+    },
+    {
+        "firstName": "billy",
+        "lastName": "joe",
+        "password": "password567",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "4773d8be-1711-4a71-b3b9-dd0e83e8ebdc",
+        "userName": "bjoe",
+        "userRole": "Contributor",
+        "email": "bjoe@email.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "0fb257a8-a085-43df-b6e6-403e20f175f1",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "96e0f2c1-d9c8-4982-8b2e-eca628054cd2",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "e90d651f-d833-4624-93fc-6b0cbb31f734",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "3135b91a-49b1-46f4-a2e8-e64dcac49386",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "29984af3-c1c1-4f17-91a9-297017885943",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "3848f9c4-6b55-4417-bb14-c08f25e1c45f",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "bd73fbf6-cdf6-47e3-a6ff-4d7263cc989d",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    },
+    {
+        "firstName": "Atticus",
+        "lastName": "Madden",
+        "password": "password",
+        "phoneNumber": "0000000000",
+        "address": "address",
+        "id": "c046b9ff-a64e-43fa-9c55-757a05cbb5ad",
+        "userName": "AMadden",
+        "userRole": "Contributor",
+        "email": "AMadden@gmail.com"
+    }
+]
