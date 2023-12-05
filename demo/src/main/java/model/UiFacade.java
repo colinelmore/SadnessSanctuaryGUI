@@ -11,26 +11,26 @@ public class UiFacade {
     private Project currentProject;
     private List<Column> columns;
     private String currentUserName;
+    private static UiFacade facade;
 
+    public static UiFacade getInstance(){
+        if(facade == null){
+            facade = new UiFacade();
+        }
 
-    public UiFacade() {
+        return facade;
+    }
+
+    private UiFacade() {
         // Initialize other managers and data structures
         columns = new ArrayList<Column>();
     }
 
     //add a login method, and a signup method, each is one line and just calls the appropriate method on the usermanager
 
-    public boolean userLogin(String userName, String userPassword) {
-    user = UserManagement.getInstance().getUser(userName, userPassword);
-    return user != null;
-    }
-
-    public void login(String userName, String userPassword) {
-        if (userLogin(userName, userPassword)) {
-            System.out.println("Login successful.");
-        } else {
-            System.out.println("Login failed. Please check your credentials.");
-        }
+    public boolean login(String userName, String userPassword) {
+        user = UserManagement.getInstance().getUser(userName, userPassword);
+        return user != null;
     }
     
     public void logout() {

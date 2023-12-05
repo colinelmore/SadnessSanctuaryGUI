@@ -1,11 +1,19 @@
 package com.example;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class HomeController {
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import com.example.App;
+import model.*;
+
+public class HomeController implements Initializable {
 
     @FXML
     private TextField usernameField;
@@ -25,13 +33,28 @@ public class HomeController {
     }
 
     @FXML
-    private void handleLogin() {
+    private void handleLogin() throws IOException {
      
-        System.out.println("Login button clicked");
+        String userName = usernameField.getText();
+        String password = passwordField.getText();
+        UiFacade facade = UiFacade.getInstance();
+
+        if(!facade.login(userName, password)){
+            System.out.println("Error Logging in");
+            return;
+        } 
+
+        System.out.println("Welcome " + facade.getCurrentUser().toString());
+        App.setRoot("mainscreen");
     }
 
     @FXML
     private void handleSignup() {
         System.out.println("Signup button clicked");
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        
     }
 }

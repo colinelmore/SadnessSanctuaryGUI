@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.example.MainScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="24.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="37.0" layoutY="30.0" prefHeight="30.0" prefWidth="175.0" text="Project Harmony">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Circle fill="#4ea6f8" layoutX="95.0" layoutY="213.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="171.0" layoutY="74.0" text="Manage Your Projects Here!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <!--<TextField layoutX="136.0" layoutY="118.0" />-->
+      <Button layoutX="350.0" layoutY="118.0" mnemonicParsing="false" text="Search" />
+      <Label layoutX="70.0" layoutY="215.0" text="Add Project">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="179.0" text="+">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Circle fx:id="lbl_electric_missle" fill="#4ea6f8" layoutX="241.0" layoutY="213.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="208.0" layoutY="206.0" text="Electric Missles">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Circle fx:id="lbl_electric_missle1" fill="#4ea6f8" layoutX="381.0" layoutY="211.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="lbl_electric_missle2" fill="#4ea6f8" layoutX="509.0" layoutY="208.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="lbl_electric_missle3" fill="#4ea6f8" layoutX="509.0" layoutY="321.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="lbl_electric_missle4" fill="#4ea6f8" layoutX="382.0" layoutY="316.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="lbl_electric_missle5" fill="#4ea6f8" layoutX="241.0" layoutY="321.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="lbl_electric_missle6" fill="#4ea6f8" layoutX="97.0" layoutY="317.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</Pane>
