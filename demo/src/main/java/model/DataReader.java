@@ -15,7 +15,7 @@ public class DataReader {
         ArrayList<User> userList = new ArrayList<>();
 
         try {
-            FileReader reader = new FileReader("json/users.json");  // Corrected the file path
+            FileReader reader = new FileReader("demo/src/main/java/data/users.json");  // Corrected the file path
             JSONParser parser = new JSONParser();
             JSONArray userListJSON = (JSONArray) parser.parse(reader);
 
