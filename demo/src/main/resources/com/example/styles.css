@@ -16,3 +16,18 @@
     -fx-text-fill: black;
 }
 
+.column {
+    -fx-background-color:lightblue;
+    -fx-padding:6;
+    -fx-border-radius:5px;
+    -fx-margin:6;
+    -fx-font-size:10px;
+    -fx-min-width:100;
+    -fx-max-width:100;
+}
+
+.column_title {
+    -fx-font-size:14px;
+}
+
+
