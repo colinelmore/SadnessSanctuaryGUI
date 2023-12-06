@@ -1,22 +1,20 @@
 package com.example;
-
-import java.io.IOException;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-
-import javafx.fxml.FXML;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.shape.Circle;
 
 public class ProjectController {
 
     @FXML
-    private Circle lbl_electric_missle;
+    private Button add_collab_button;
+
+    @FXML
+    private Button back_button;
+
+    @FXML
+    private Button new_column_button;
 
 }
+
 
 /* 
 public class ProjectController {

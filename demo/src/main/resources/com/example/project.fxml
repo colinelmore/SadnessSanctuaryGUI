@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="126.0" layoutY="173.0" text="I believe in you ben">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="27.0" layoutY="20.0" prefHeight="30.0" prefWidth="175.0" text="Project Harmony">
          <font>
-            <Font size="44.0" />
+            <Font size="25.0" />
          </font>
       </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="231.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="139.0" />
+      <Label layoutX="242.0" layoutY="65.0" prefHeight="30.0" prefWidth="117.0" text="Electric Missles">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="51.0" layoutY="136.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="177.0" layoutY="136.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="305.0" layoutY="136.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="432.0" layoutY="136.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="51.0" layoutY="119.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="177.0" layoutY="119.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="305.0" layoutY="119.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="432.0" layoutY="119.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Label layoutX="90.0" layoutY="119.0" text="ToDo" />
+      <Label layoutX="216.0" layoutY="119.0" text="Doing" />
+      <Label layoutX="329.0" layoutY="118.0" text="Completed" />
+      <Label layoutX="453.0" layoutY="119.0" text="Abandoned" />
+      <Label layoutX="94.0" layoutY="116.0" text="...">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Ellipse fill="DODGERBLUE" layoutX="572.0" layoutY="42.0" radiusX="23.0" radiusY="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="add_collab_button" layoutX="514.0" layoutY="94.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="66.0" text="Add Collaborators">
+         <font>
+            <Font size="6.0" />
+         </font>
+      </Button>
+      <Button fx:id="back_button" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="new_column_button" layoutX="524.0" layoutY="352.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="56.0" text="Add new &#10;Column" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
