@@ -119,4 +119,9 @@ public class UiFacade {
     public static void main(String[] args){
         //?
     }
+
+    public void save() {
+        ProjectManager.getInstance().saveProjects();
+        UserManagement.getInstance().saveUsers();
+    }
 }
