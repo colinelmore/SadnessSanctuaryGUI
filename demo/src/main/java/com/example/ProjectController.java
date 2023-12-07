@@ -53,37 +53,7 @@ public class ProjectController implements Initializable {
             ArrayList<Task> tasks = column.getColumnTaskList();
 
             for (Task task : tasks) {
-                Button taskButton = new Button();
-                taskButton.setText(task.getTaskName());
-                taskButton.setWrapText(true);
-
-                taskButton.setOnDragDetected(new EventHandler<MouseEvent>() { // Drag and Drop code sourced from
-                                                                              // https://docs.oracle.com/javafx/2/drag_drop/jfxpub-drag_drop.htm
-                    public void handle(MouseEvent event) {
-                        Dragboard db = taskButton.startDragAndDrop(TransferMode.ANY);
-                        ClipboardContent taskContent = new ClipboardContent();
-                        taskContent.putString(taskButton.getText());
-                        db.setContent(taskContent);
-                    }
-                });
-
-                taskButton.setOnDragDone(new EventHandler<DragEvent>() {
-                    public void handle(DragEvent event) {
-                        /* the drag-and-drop gesture ended */
-                        System.out.println("onDragDone");
-                         /* if the data was successfully moved, clear it */
-                         if (event.getTransferMode() == TransferMode.MOVE) {
-                           // columnBox.getChildren().remove(taskButton);
-                            Task deleteTask = column.getTaskFromColumnByName(taskButton.getText());
-                            column.removeColumnTask(deleteTask);
-                            facade.save();
-                            initialize(location, resources);
-                         }
-                        event.consume();
-                    }
-                });
-
-                columnBox.getChildren().add(taskButton);
+                initializeTask(task, columnBox, column);
             }
 
             columnBox.setOnDragOver(new EventHandler<DragEvent>() {
@@ -99,19 +69,15 @@ public class ProjectController implements Initializable {
 
             columnBox.setOnDragDropped(new EventHandler<DragEvent>() {
                 public void handle(DragEvent event) {
-                    /* data dropped */
                     System.out.println("onDragDropped");
-                    /* if there is a string data on dragboard, read it and use it */
                     Dragboard db = event.getDragboard();
                     boolean success = false;
                     if (db.hasString()) {
                         Task copiedTask = facade.getTaskByName(db.getString());
                         column.addColumnTask(copiedTask);
+                        initializeTask(copiedTask,columnBox,column);
+                        success = true;
                     }
-                    /*
-                     * let the source know whether the string was successfully
-                     * transferred and used
-                     */
                     event.setDropCompleted(success);
 
                     event.consume();
@@ -120,6 +86,36 @@ public class ProjectController implements Initializable {
 
         }
 
+    }
+
+    private void initializeTask(Task task, VBox columnBox, Column column) {
+        Button taskButton = new Button();
+        taskButton.setText(task.getTaskName());
+        taskButton.setWrapText(true);
+
+        taskButton.setOnDragDetected(new EventHandler<MouseEvent>() { // Drag and Drop code sourced from
+                                                                      // https://docs.oracle.com/javafx/2/drag_drop/jfxpub-drag_drop.htm
+            public void handle(MouseEvent event) {
+                Dragboard db = taskButton.startDragAndDrop(TransferMode.ANY);
+                ClipboardContent taskContent = new ClipboardContent();
+                taskContent.putString(taskButton.getText());
+                db.setContent(taskContent);
+            }
+        });
+
+        taskButton.setOnDragDone(new EventHandler<DragEvent>() {
+            public void handle(DragEvent event) {
+                System.out.println("onDragDone");
+                if (event.getTransferMode() == TransferMode.MOVE) {
+                    columnBox.getChildren().remove(taskButton);
+                    column.removeColumnTask(task);
+                    System.out.println("DragDone");
+                }
+                event.consume();
+            }
+        });
+
+        columnBox.getChildren().add(taskButton);
     }
 
 }
