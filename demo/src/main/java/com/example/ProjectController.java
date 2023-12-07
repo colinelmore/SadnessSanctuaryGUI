@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.event.EventHandler;
+import javafx.scene.input.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
@@ -48,35 +50,32 @@ public class ProjectController implements Initializable{
 
             ArrayList<Task> tasks = column.getColumnTaskList();
 
-            for(Task task : tasks){
-                Label taskLabel = new Label();
-                taskLabel.setWrapText(true);
-                taskLabel.setText(task.getTaskName());
-                columnBox.getChildren().add(taskLabel);
+            for(Task task : tasks) {
+                Button taskButton = new Button();
+                taskButton.setText(task.getTaskName());
+                taskButton.setWrapText(true);
+
+                taskButton.setOnDragDetected(new EventHandler<MouseEvent>() {   // Drag and Drop code sourced from https://docs.oracle.com/javafx/2/drag_drop/jfxpub-drag_drop.htm
+                    public void handle(MouseEvent event) {
+                        Dragboard db = taskButton.startDragAndDrop(TransferMode.ANY);
+                        ClipboardContent taskContent = new ClipboardContent();
+                        taskContent.putString(taskButton.getText());
+                        db.setContent(taskContent);
+                    }
+                });
+
+                columnBox.getChildren().add(taskButton);
             }
+
+            setDropHandler(columnBox);
+
         }
-        
      
     }
+    
+    private void setDropHandler(VBox vBox) {
+
+
+    }
+
 }
-
-
-/* 
-public class ProjectController {
-
-     @FXML
-    private button logoutButton;
-
-    @FXML
-    private button addColumnButton;
-
-    @FXML
-    private button editProjectTitleButton;
-
-    @FXML
-    private button editProjectDescriptionButton;
-
-    @FXML
-    private button settingsButton;
-}
-*/

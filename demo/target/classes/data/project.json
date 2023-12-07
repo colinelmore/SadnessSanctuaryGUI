@@ -16,6 +16,19 @@
                         "taskPriority": 2,
                         "taskName": "Initialize super algorithm to detonate at warp speed",
                         "taskNotes": "this is a note for you :)"
+                    },
+                    {
+                        "taskDueDate": null,
+                        "comments": [
+                            {
+                                "authorUserName": "AMadden",
+                                "completed": false,
+                                "commentText": "Avoid civilians Jeff!"
+                            }
+                        ],
+                        "taskPriority": 2,
+                        "taskName": "Task 2 lol",
+                        "taskNotes": "this is a note for you :)"
                     }
                 ]
             },
