@@ -47,11 +47,14 @@ public class HomeController implements Initializable {
         System.out.println("Welcome " + facade.getCurrentUser().toString());
         App.setRoot("mainscreen");
     }
+   
+
 
     @FXML
-    private void handleSignup() {
-        System.out.println("Signup button clicked");
+    private void handleSignup() throws IOException{
+        App.setRoot("signup");
     }
+       
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

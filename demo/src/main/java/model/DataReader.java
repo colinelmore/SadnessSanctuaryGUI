@@ -46,7 +46,7 @@ public class DataReader {
         ArrayList<Project> projectList = new ArrayList<>();
 
         try {
-            FileReader reader = new FileReader("json/projects.json");  // Corrected the file path
+            FileReader reader = new FileReader("demo/src/main/java/data/project.json");  // Corrected the file path
             JSONParser parser = new JSONParser();
             JSONArray projectListJSON = (JSONArray) parser.parse(reader);
 
@@ -74,7 +74,7 @@ public class DataReader {
 
         for (int i = 0; i < columnListJSON.size(); i++) {
             JSONObject columnJSON = (JSONObject) columnListJSON.get(i);
-            String columnName = (String) columnJSON.get("columnName");
+            String columnName = (String) columnJSON.get("name");
             ArrayList<Task> columnTaskList = getTasks((JSONArray)columnJSON.get("tasks"));
 
             columnList.add(new Column(columnName, columnTaskList));

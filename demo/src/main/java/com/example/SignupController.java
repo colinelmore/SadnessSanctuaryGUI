@@ -1,5 +1,7 @@
 package com.example;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -33,8 +35,13 @@ public class SignupController {
     private void initialize() {
     }
 
+    // @FXML
+    // private void handleSignup() {
+    //     System.out.println("Account created for " + firstNameField.getText() + " " + lastNameField.getText());
+    // }
+
     @FXML
-    private void handleSignup() {
-        System.out.println("Account created for " + firstNameField.getText() + " " + lastNameField.getText());
+    private void handleSignup() throws IOException{
+        App.setRoot("mainscreen");
     }
 }
