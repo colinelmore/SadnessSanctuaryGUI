@@ -26,6 +26,9 @@ public class HomeController implements Initializable {
 
     @FXML
     private Button signupButton;
+   
+    @FXML
+    private Button logoutButton;
 
     @FXML
     private void initialize() {
@@ -47,17 +50,23 @@ public class HomeController implements Initializable {
         System.out.println("Welcome " + facade.getCurrentUser().toString());
         App.setRoot("mainscreen");
     }
-   
+  
+    @FXML
+    private void handleLogout() throws IOException {
+        // Handle logout, take the user back to the home screen
+        App.setRoot("home");
+    }
 
 
     @FXML
     private void handleSignup() throws IOException{
         App.setRoot("signup");
     }
-       
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         
     }
+
+    
 }
