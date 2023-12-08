@@ -7,7 +7,8 @@ import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class MainScreenController {
+public class MainScreenController 
+{
 
     @FXML
     private Circle lbl_electric_missle;
@@ -16,11 +17,16 @@ public class MainScreenController {
     private Button logoutButton;
 
     @FXML
-    void initialize() {
-        logoutButton.setOnAction(event -> {
-            try {
+    void initialize() 
+    {
+        logoutButton.setOnAction(event -> 
+        {
+            try 
+            {
                 handleLogout();
-            } catch (IOException e) {
+            } 
+            catch (IOException e) 
+            {
                 e.printStackTrace();
             }
         });
